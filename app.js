@@ -109,7 +109,7 @@ function showWeatherReport(weather) {
 
   //background image
 
-  if (weatherType.textContent == "Rainy") {
+  if (weatherType.textContent == "Rain") {
     document.body.style.backgroundImage = "url('rainy.jpg')";
   } else if (weatherType.textContent == "Clouds") {
     document.body.style.backgroundImage = "url('cloud.jpg')";
