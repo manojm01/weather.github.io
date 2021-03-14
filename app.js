@@ -25,6 +25,7 @@ const weatherType = document.getElementById("weatherType");
 const weatherStatus = document.getElementById("weather-status");
 const sunriseText = document.getElementById("sunrise");
 const sunsetText = document.getElementById("sunset");
+const collapseThree = document.getElementById("collapseThree");
 
 //***************************************** */
 recognition.onresult = function (event) {
@@ -85,6 +86,7 @@ function showWeatherReport(weather) {
     temp.innerHTML = ``;
     minmax.innerHTML = ``;
     weatherType.innerHTML = ``;
+    collapseThree.innerHTML=``;
     read(`Location not found`);
   } else {
     if (weather.sys.country == undefined) {
